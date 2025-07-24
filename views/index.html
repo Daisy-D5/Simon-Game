@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <title>Simon Game</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script> 
+      /*
+      var script = document.createElement('script');
+      script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js";
+      script.type = 'text/javascript';
+      document.getElementsByTagName('head')[0].appendChild(script);
+      // check if jquery has been added
+      script.onreadystatechange = handler;
+      script.onload = handler;
+
+      function handler() {
+        console.log('jquery added :)');
+      }
+      */
+    </script>
+</head>
+
+<body>
+  <h1 id="level-title">Press 'Simon' to Start</h1>
+  <div class="container">
+    <div class="buttons-container">
+      <!-- top row buttons -->
+      <div class="top-row-buttons">
+        <div type="button" id="green" class="btn green">
+        </div>
+        <div type="button" id="red" class="btn red">
+        </div>
+      </div>
+      
+      <!-- bottom row buttons -->
+      <div class="bottom-row-buttons">
+        <div type="button" id="yellow" class="btn yellow">
+        </div>
+        <div type="button" id="blue" class="btn blue">
+        </div>
+      </div>
+      
+      <!-- middle circle -->
+       <div id="simon">
+        <h1 class="simon-name">Simon</h1>
+       </div>
+    </div>
+
+  </div>
+  
+ 
+<script type="text/javascript" src="../simon.js"></script>
+</body>
+
+</html>
