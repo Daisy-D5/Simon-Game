@@ -1,5 +1,5 @@
 {
-  "name": "simon-game-challenge-step-10-answer",
+  "name": "simon-game",
   "version": "1.0.0",
   "main": "game10.js",
   "type": "module",
