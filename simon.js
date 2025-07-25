@@ -7,11 +7,7 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-$("#simon").click(function() {
-    $("#level-title").text("Level " + level);
-    nextSequence();
-    started = true;
-});
+oneClick();
 
 $(".btn").click(function() {
   if (started) {
@@ -24,6 +20,14 @@ $(".btn").click(function() {
     checkAnswer(userClickedPattern.length-1);
   }
 });
+
+function oneClick() {
+  $("#simon").one("click", (function() {
+  $("#level-title").text("Level " + level);
+    nextSequence(); 
+    started = true;
+    }));
+}
 
 function checkAnswer(currentLevel) {
 
@@ -86,6 +90,7 @@ function animatePress(currentColor) {
 //1. Create a new function called startOver().
 function startOver() {
   //3. Inside this function, you'll need to reset the values of level, gamePattern and started variables.
+  oneClick()
   level = 0;
   gamePattern = [];
   started = false;
