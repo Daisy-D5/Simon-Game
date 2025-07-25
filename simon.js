@@ -1,7 +1,3 @@
-import express from "express";
-
-const app = express();
-const port = 3000;
 
 var buttonColours = ["red", "blue", "green", "yellow"];
 
@@ -80,7 +76,7 @@ function nextSequence() {
 }
 
 function playSound(name) {
-  var audio = new Audio("/sounds/" + name + ".mp3");
+  var audio = new Audio(name + ".mp3");
   audio.play();
 }
 
@@ -100,6 +96,3 @@ function startOver() {
   started = false;
 }
 
-app.listen(port, () => {
-  console.log(`Server running on http://localhost:${port}`);
-});
