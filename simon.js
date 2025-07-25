@@ -1,3 +1,7 @@
+import express from "express";
+
+const app = express();
+const port = 3000;
 
 var buttonColours = ["red", "blue", "green", "yellow"];
 
@@ -95,3 +99,7 @@ function startOver() {
   gamePattern = [];
   started = false;
 }
+
+app.listen(port, () => {
+  console.log(`Server running on http://localhost:${port}`);
+});
