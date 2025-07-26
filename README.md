@@ -1,6 +1,6 @@
 ## Controls
 
-#### Start by pressing 'Simon' button for a single light and sound to start off the game. 
+#### Start by pressing 'play' button for a single light and sound to start off the game. 
 
 ## Goal 
 
