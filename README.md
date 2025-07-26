@@ -1,6 +1,8 @@
+#### Simon is a game that tests your short-term memory skills. 
+
 ## Controls
 
-#### Start by pressing 'play' button for a single light and sound to start off the game. 
+#### Start by pressing 'play' button for first random colour button to flash and make a sound.
 
 ## Goal 
 
@@ -8,17 +10,13 @@
 
 ## Simon's sequence
 
-#### 1. The game will light up one single color button in a random order, each with a corresponding sound. 
-#### 2. Each new level lights up new color and sound adding it to the sequence. 
-
-## Repeat the sequence
-
-#### Player must press the color buttons in the correct order as Simon displayed them.
- 
-## Increasing difficulty
-
-#### Each time a player successfully repeats the sequence, Simon adds another light and sound to it, increasing the difficulty.
+#### 1. At the start of each level 'simon' will flash one single colour button in a random order each with a corresponding sound. 
+#### 2. Player must now repeat and press the same button that 'simon' flashed up. Correctly pressed button lights up and player moves to the next level. 
+#### 3. Each new level will add a new random button to the previous sequence.
+#### 4. Player must continue to repeat increasing sequences correctly in order to move to the next level. 
 
 ## Game over 
 
 #### The game ends when a player makes a mistake in repeating the sequence. 
+
+## Good luck!
