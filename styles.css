@@ -1,0 +1,191 @@
+body {
+  text-align: center;
+  background-color: #011F3F;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+#level-title {
+  font-family: 'Press Start 2P';
+  font-size: 3rem;
+  margin:  5%;
+  color: #FEF2BF;
+  margin-bottom: 30px;
+}
+
+.container {
+  display: grid;
+  position: relative;
+  width: 80%;
+  justify-self: center;
+  justify-content: center;
+  justify-items: center;
+  margin: 40px 0px 0px 0px;
+}
+
+.rules-container {
+  display: flex;
+  position: relative;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin: 0px 0px 0px 0px;
+}
+
+.how-btn {
+  display: block;
+  position: relative;
+  background-color: #FEF2BF;
+  font-family: 'Press Start 2P';
+  align-self: self-start;
+  align-content: center;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  margin: 0 30px 0 0;
+  cursor: pointer;
+  border: #000 5px solid;
+  border-radius: 40%;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+.how-questionmark {
+  font-family: 'Press Start 2P';
+  font-size: 1.8rem;
+  color: #011F3F;
+  margin: 0px;
+  padding-left: 2px;
+}
+
+.rules-text-container {
+  display: "";
+  position: relative;
+  font-family: 'Press Start 2P';
+  justify-items: left;
+  text-align: left;
+  white-space: wrap;
+  justify-self: center;
+  color: #011F3F;
+  font-size: 0.8rem;
+  width: 60%;
+  height: auto;
+  margin: 0px 0px 50px 0px;
+  padding: 20px;
+  background-color: #FEF2BF;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+.btn {
+  display: flex;
+  position: relative;
+  width: 230px;
+  height: 230px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+.top-row-buttons {
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.bottom-row-buttons {
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.green {
+  display: flex;
+  position: relative;
+  background-color: green;
+  justify-content: center;
+   border: 35px solid black;
+  border-radius: 15%;
+  border-top-left-radius: 90%;
+  outline-offset: 10px;
+  margin: -13px; 
+  padding: 0px;
+}
+
+.red {
+  display: flex;
+  position: relative;
+  background-color: red;
+  justify-content: center;
+  border: 35px solid black;
+  border-radius: 15%;
+  border-top-right-radius: 90%;
+  margin: -13px; 
+  padding: 0px;
+}
+
+.yellow {
+  display: flex;
+  position: relative;
+  background-color: yellow;
+  justify-content: center;
+  border: 35px solid black;
+  border-radius: 15%;
+  border-bottom-left-radius: 90%;
+  margin: -13px;    
+  padding: 0px;
+}
+
+.blue {
+  display: flex;
+  position: relative;
+  background-color: blue;
+  justify-content: center;
+  border: 35px solid black;
+  border-radius: 15%;
+  border-bottom-right-radius: 90%;
+  margin: -13px;  
+  padding: 0px;
+}
+
+#simon {
+  display: flex;
+  position: absolute;
+  object-position: center;
+  justify-content: center;
+  width: 210px;
+  height: 210px;
+  background-color: #011F3F;
+  border: 30px solid black;
+  border-radius: 50%;
+}
+
+.simon-name {
+  display: flex;
+  position: relative;
+  align-items: center;
+  font-family: 'Press Start 2P';
+  font-size: 2.5rem;
+  margin:  5%;
+  color: #FEF2BF;
+
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: rgb(201, 247, 255);
+}

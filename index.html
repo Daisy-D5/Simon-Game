@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <title>Simon Game</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script> 
+      /*
+      var script = document.createElement('script');
+      script.src = "https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js";
+      script.type = 'text/javascript';
+      document.getElementsByTagName('head')[0].appendChild(script);
+      // check if jquery has been added
+      script.onreadystatechange = handler;
+      script.onload = handler;
+
+      function handler() {
+        console.log('jquery added :)');
+      }
+      */
+    </script>
+</head>
+
+<body>
+  <!-- title -->
+  <h1 id="level-title">Press 'play' to Start</h1>
+  <!-- rules container -->
+  <div class="rules-container">
+      <!-- rules button -->
+      <div class="how-btn" onclick="popUpRules()">
+        <p class="how-questionmark">?</p>
+      </div>
+      <!-- rules text -->
+      <div class="rules-text-container" hidden>
+        <p>Simon is a memory game that tests your short-term memory skills.</p>
+          <br>
+        <h3 >Controls</h3>
+        <p>Start by pressing 'play' button for first random colour button to flash and make a sound.</p >
+          <br>
+        <h3>Goal</h3>
+        <p>Successfully repeat increasingly long sequences until a mistake is made.</p>
+          <br>
+        <h3>Simon's sequence</h3>
+        <p>1. At the start of each level 'simon' will flash one single colour button in a random order each with a corresponding sound.</p >
+          <br>
+        <p>2. Player must now repeat and press the same button that 'simon' flashed up. Correctly pressed button lights up and player moves to the next level.</p >
+          <br>
+        <p>3. Each new level will add a new random button to the previous sequence.</p >
+          <br>
+          <p>4. Player must continue to repeat increasing sequences correctly in order to move to the next level.</p >
+          <br>
+        <h3>Game over</h3>
+        <p>The game ends when a player makes a mistake in repeating the sequence.</p >
+          <br>
+        <h3>Good luck!</h3>
+      </div>
+    </div>
+  <!-- buttons container -->
+  <div class="container">
+    <div class="buttons-container">
+      <!-- top row buttons -->
+      <div class="top-row-buttons">
+        <div type="button" id="green" class="btn green">
+        </div>
+        <div type="button" id="red" class="btn red">
+        </div>
+      </div>
+      
+      <!-- bottom row buttons -->
+      <div class="bottom-row-buttons">
+        <div type="button" id="yellow" class="btn yellow">
+        </div>
+        <div type="button" id="blue" class="btn blue">
+        </div>
+      </div>
+      
+      <!-- middle circle -->
+       <div id="simon" >
+        <h1 class="simon-name">play</h1>
+       </div>
+    </div>
+
+  </div>
+  
+ <script>
+    // Function to show the rules text
+      function popUpRules() {
+        const rulesTextContainer = document.querySelector('.rules-text-container');
+        rulesTextContainer.hidden = !rulesTextContainer.hidden;
+      }
+ </script>
+<script type="text/javascript" src="./simon.js"></script>
+</body>
+
+</html>
